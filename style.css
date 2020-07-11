@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(243, 243, 243);
+    background-image: url("https://image.freepik.com/free-photo/male-hand-starts-analog-stopwatch-black-background-close-up-isolate-copy-space_94132-222.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+nav {
+    position: fixed;
+    /*background-color: dimgray;*/
+    background-color: white;
+    top: 2%;
+    right: 0%;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-align: center;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.253);
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav:hover {
+    background-color: rgb(128,0,128);
+
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 25px;
+    word-spacing: 20px;
+}
+
+.stop_watch_sec {
+    display: flex;
+    padding: 70px 50px 100px 50px;
+}
+
+.number {
+    width: 200px;
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgb(128,128,128);
+    user-select: none;
+    color: white;
+}
+
+.number span {
+    font-size: 50px;
+    padding: 20px 0;
+}
+
+.btn_sec {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 5px 2px 20px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+
+button {
+    font-size: 25px;
+    padding: 10px 50px;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border: 1px solid black;
+    transition: linear .3s;
+    position: relative;
+}
+
+button:hover {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+@media only screen and (max-width:768px) {
+    .container h1 {
+        font-size: 40px;
+        color: navy;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        word-spacing: 10px;
+    }
+    .number {
+        width: 150px;
+        margin: 10px;
+        font-size: 22px;
+    }
+    .number span {
+        font-size: 30px;
+        padding: 10px 0;
+    }
+    button {
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    .container h1 {
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+    .stop_watch_sec {
+        padding: 70px 0 70px 0;
+    }
+    .number {
+        width: 100px;
+        margin: 5px;
+        font-size: 16px;
+        padding: 20px;
+    }
+    .number span {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    nav {
+        top: 5%;
+        font-size: 12px;
+        padding: 7px 15px;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .container h1 {
+        font-size: 25px;
+    }
+    .stop_watch_sec {
+        padding: 70px 0 70px 0;
+    }
+    .number {
+        width: 80px;
+        margin: 3px;
+        font-size: 14px;
+        padding: 20px;
+    }
+    .number span {
+        font-size: 18px;
+        padding: 5px 0;
+    }
+    button {
+        font-size: 14px;
+        padding: 7px 15px;
+    }
+}
